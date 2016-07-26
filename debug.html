@@ -1,0 +1,50 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta http-equiv="content-type" content="text/html; charset=utf-8">
+<title>debug test</title>
+
+<style media="screen" type="text/css">
+#debug {
+    width: 100%;
+    height: 90px;
+    overflow: auto;
+}
+</style>
+
+<script src="jquery.mobile/jquery-2.1.4.min.js"></script>
+<script src="js/debug.js"></script>
+<script type="text/javascript">
+window.onload = function()
+{
+  // take over some of the console functionality
+  // this will not show broken code such as the
+  // dummy_function (below - missing semi-colon)
+  debugConsole();
+  
+  // write to the console.log
+  console.log("we're now using console log to write to our debug \<div\>");
+  
+  // convert a multidemensional array to a pretty output string
+  var output = print(dataobj);
+  
+  // write directly to the div
+  // $('#debug').html(output);
+  
+  // use console log to output our string
+  // console.log(output);
+  
+  // let console.log do the conversion and output
+  console.log(dataobj);
+  
+  // call this and notice you don't get any output in the div
+  // this is written directly to the original console
+  dummy_function() 
+}
+</script>
+</head>
+<body>
+<h2>Debug</h2>
+  <div id="debug"></div> 
+</body>
+</html>

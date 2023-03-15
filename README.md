@@ -4,7 +4,7 @@ takeover console.log in cordova webviews and output text to a div.
 History:
 Like most developers, I find console.log output a valuable debugging tool and this was missing when trying to debug cordova apps in the field (without a laptop or desktop).
 
-My solution, when I originally wrote about 7 years ago, was to hijack the console.log, console.warn and console.error functions and write the output to a <div>.
+My solution, when I originally wrote about 7 years ago, was to hijack the console.log, console.warn and console.error functions and write the output to a &ltdiv&gt.
 
 Since the original version, I've added a few functions and a few others had fallen behind so this version constitutes a pretty major rewrite with some added functions.
 

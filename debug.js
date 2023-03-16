@@ -69,7 +69,7 @@ function debugConsole()
     arrDebug = history;
 
   // initialize the array with some basic info
-  arrDebug.push("== Debugging " +userInfo.dname +" ==");
+  arrDebug.push("== Debugging Starting ==");
   arrDebug.push("== " +timeStamp(true) +" ==");
 
   // take over the onerror function as this is outside the console
